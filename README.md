@@ -2,11 +2,11 @@
 
 **Overview**
 
-This project is a SystemC module for generating and binding hypervectors. The module, named binding, generates random hypervectors, performs binding operations on them, and outputs the results. It supports both binary and bipolar hypervectors.
+This project is a SystemC module for generating and binding hypervectors. The SystemC module, named binding, generates random hypervectors, performs binding operations on them, and outputs the results. It supports both binary and bipolar hypervectors.
 
 **Files**
 
-- İtem\_mem.cpp: The main SystemC file containing the binding module definition and the simulation setup.
+- item_mem.cpp: The main SystemC file containing the binding module definition and the simulation setup.
 
 **Key Components**
 
@@ -21,17 +21,17 @@ Hypervectors are high-dimensional vectors used in various computational tasks. I
 
 **Item Memories**
 
-- item\_memory: Stores a random hypervector for encoding feature position information.
-- continuous\_item\_memory: Stores a random hypervector for quantizing feature value information.
+- item_memory: Stores a random hypervector for encoding feature position information.
+- continuous_item_memory: Stores a random hypervector for quantizing feature value information.
 
 **Binding Operations**
 
-- perform\_xor\_operation(): Performs XOR operation for binary hypervectors.
-- perform\_pointwise\_multiplication(): Performs pointwise multiplication for bipolar hypervectors.
+- perform_xor_operation(): Performs XOR operation for binary hypervectors.
+- perform_pointwise_multiplication(): Performs pointwise multiplication for bipolar hypervectors.
 
 **Flag**
 **
-`      `• is\_binary : is the flag in order to decide binary or bipolar hypervector
+- is\_binary : is the flag in order to decide binary or bipolar hypervector
 
 **Tracing**
 
@@ -43,7 +43,10 @@ Hypervectors are high-dimensional vectors used in various computational tasks. I
 
 **To-Do**
 
-- Other operations should be added such as bundling
+- Bundling
+- Shifting
+- Associative Memory
+- Similarity Check Functions (cosine similartiy and hamming distance)
 
 **Author**
 
